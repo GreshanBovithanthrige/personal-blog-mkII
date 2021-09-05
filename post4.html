@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySQL root password reset guide</title>
+  <meta name="description" content="A Step by step guide to MySQL root password change on MySQL Work Bench (Access Denied root@localhost)">
+  <link rel="SHORTCUT ICON" href="GB.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar">
+        <a class="navbar-brand" href="index.html">GB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-me.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  </section>
+
+<section class="p3">
+
+  <div class="post4">
+
+    <h3 class="text-left post2-h1"><strong>Access Denied root@localhost — Solved — MySQL Server — Windows — Reset Root Password</strong></h3>
+
+    <br>
+
+    <p class="text-left">This error can be fixed by running the "ALTER USER" command in the CMD. I will show you how to get it done, step by step. Follow my steps carefully.</p>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 1</strong></p>
+
+    <p class="text-left">First, you need to stop MySQL from running in the system. For that, go to <strong>Task Manager</strong> by pressing <strong>CTRL+SHIFT+ESCAPE </strong> in combination or by simply searching
+      for the task manager in the <strong>Search</strong> of Windows Home screen.
+      <br>
+      <br>
+      Go to the <strong>Services Tab</strong> of task manager and find the MySQL service and right-click on it and click and press <strong>Stop.</strong>
+    </p>
+
+    <img src="task-manager-sql.png" class="img-fluid" alt="Task Manager">
+    <p class="caption"><small>Right Click and STOP the process from running</small></p>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 2</strong></p>
+
+    <p class="text-left">Create a text file with the following command in it. And name it <strong>mysql-init.txt</strong> (BTW, the name can be anything. In this particular instance I chose this name)
+      And <strong>save</strong> it on the Desktop. In the <strong>IDENTIFIED BY</strong> section, type the password you originally used when you installed your My SQL workbench of the server.</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘root’</p>
+    </blockquote>
+
+    <img src="text-pad-sql.png" class="img-fluid" alt="root password reset command">
+
+    <br>
+
+    <p class="text-left"><strong>STEP 3</strong></p>
+
+    <p class="text-left">Copy your saved text file and copy it to the C drive.</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">C:\</p>
+    </blockquote>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 4</strong></p>
+
+    <p class="text-left">Navigate to the folder where you had MySQL Server installed. The file path will be as below. (If you had your MySQL server installed in the C drive)</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">C:\Program Files\MySQL\MySQL Server 8.0\bin</p>
+    </blockquote>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 5</strong></p>
+
+    <p class="text-left">Copy your file path and open the <strong>Command Prompt</strong> with <strong>Administrative Privileges.</strong></p>
+
+    <img src="run-dialog-box.png" class="img-fluid" alt="Run command to CMD">
+    <p class="caption"><small>Type CMD and press CTRL+SHIFT+ENTER in combination</small></p>
+
+    <img src="images/CMD.png" class="img-fluid" alt="CMD">
+    <p class="caption"><small>If you opened the CMD with Administrative privileges, you will see <strong>system32</strong> in your path instead of your computer name</small></p>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 6</strong></p>
+
+    <p class="text-left">And navigate to your MySQL Server installed folder using the <strong>cd</strong> command as stated below</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">cd C:\Program Files\MySQL\MySQL Server 8.0\bin</p>
+    </blockquote>
+
+    <img src="images/CMD2.png" class="img-fluid" alt="cmd-command">
+    <img src="images/CMD3.png" class="img-fluid" alt="cmd-command">
+
+    <br>
+
+    <p class="text-left"><strong>STEP 7</strong></p>
+
+    <p class="text-left">After navigating to the bin folder using the CMD, you need to find the path of the <strong>my.ini</strong> file. It will
+      be located in this file path and make sure that you have the <strong>Hidden</strong> File option ticked.</p>
+
+    <img src="program-data-file.png" class="img-fluid" alt="Hidden File Tick Option Windows 10">
+    <p class="caption"><small>Hidden FIle option ticked (Otherwise you won't be able to see the ProgramData File)</small></p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">C:\ProgramData\MySQL\MySQL Server 8.0</p>
+    </blockquote>
+
+    <img src="my-ini.png" class="img-fluid" alt="file path">
+    <p class="caption"><small>File path to the my.ini file</small></p>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 8</strong></p>
+
+    <p class="text-left">After locating that on the <strong>Command Prompt</strong> window, type the following command.
+      (If you're having trouble typing the command, just copy and paste the command to the console)</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">Yo, G Look this up</p>
+    </blockquote>
+
+    <img src="complete-command-cmd.png" class="img-fluid" alt="cmd-command">
+    <p class="caption"><small>Complete command as shown above</small></p>
+
+    <p class="text-left">If you wanna see what happens behind the scene, just type <strong>--console</strong> at the end of the command, like in the screenshot.
+      And Press <strong>ENTER</strong></p>
+
+    <p class="text-left">If completed successfully you will see ready you will see the following output from the console.</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">mysqld.exe: ready for connections. Version: "8.0.12" socket : ' ' port: 3306 MySQL Community Server - GPL.</p>
+    </blockquote>
+
+    <p class="text-left">Press <strong>CTRL+C</strong> to get out of the CMD window.</p>
+
+    <p class="text-left">And then you can delete the file you created from the C Drive.</p>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 9</strong></p>
+
+    <p class="text-left">Go to the <strong>TASK MANAGER</strong> and start the MySQL process.</p>
+
+    <img src="task-manager-mysql-start-1.png" class="img-fluid" alt="task-manager">
+    <p class="caption"><small>RIGHT-CLICK on the STOPPED process and START it.</small></p>
+
+    <img src="task-manager-mysql-start-2.png" class="img-fluid" alt="task-manager">
+    <p class="caption"><small>SQL server RUNNING.</small></p>
+
+    <br>
+
+    <p class="text-left"><strong>STEP 10</strong></p>
+
+    <p class="text-left">Try opening your MySQL Work Bench and entering the password you entered in the init file you created earlier. This should fix your problem.</p>
+
+    <p class="text-left">NOTE: This guideline is specifically made for MySQL Server 8.0 and try changing your commands according to your SQL Server version.</p>
+
+</section>
+
+
+
+
+
+
+
+
+  </div>
+  <!-- Footer -->
+
+  <footer id="footer">
+    <a href="https://facebook.com/GreshanBovithanthrige"><span style="color:#FFF;"><span /><i class="fab fa-facebook sm-icon"></i></a>
+    <a href="https://instagram.com/gbovithanthrige"><span style="color:#FFF;"><span /><i class="fab fa-instagram sm-icon"></i><a />
+        <a href="https://twitter.com/gbovithanthrige"><span style="color:#FFF;"><span /><i class="fab fa-twitter sm-icon"></i><a />
+            <a href="https://www.linkedin.com/in/greshanbovithanthrige/"><span style="color:#FFF;"><span /><i class="fab fa-linkedin-in sm-icon"></i></a>
+            <a href="mailto:greshanbovithanthrige@gmail.com"><span style="color:#FFF;"><span /><i class="fas fa-envelope-square sm-icon"></i></a>
+
+            <p class="p-text">Crafted by Greshan Bovithanthrige</p>
+
+  </footer>
+
+
+</body>
+
+</html>

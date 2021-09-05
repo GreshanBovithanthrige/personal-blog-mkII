@@ -1,0 +1,424 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  color: #000;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#title {
+  background-color: #082032;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+  /* display: flex; */
+
+.common{
+  position: relative;
+  bottom: 50px;
+  padding-left: 180px;
+
+}
+
+.intro{
+  position: relative;
+  bottom: 50px;
+  padding-right: 120px;
+
+}
+
+
+
+.heading {
+  text-align: center;
+  margin: auto;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #000;
+}
+
+.name {
+font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+p {
+  color: #40514E;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Alumni Sans";
+  font-weight: 500;
+  font-size: 2.7rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+/* Buttons */
+.about-button {
+  margin: 2% 0% 5% 0%;
+}
+
+.card-button {
+  width: 180px;
+  margin: auto;
+}
+
+/* Features Secition */
+#features {
+  padding: 7% 15%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.card {
+  background-color: #212529;
+  border-radius: .50rem;
+}
+
+.card-text {
+  color: #fff;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.post-column {
+  padding-bottom: 5%;
+}
+
+/* Footer */
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #334756;
+  margin-top: auto;
+}
+
+.p-text {
+  color: #fff;
+}
+
+.sm-icon {
+  padding: 20px 10px;
+}
+
+/* About me page styles */
+.about-page-p {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.about-h1{
+  font-size: 2.5rem;
+}
+
+.post2-h1{
+  text-align: center;
+}
+
+.img-fluid{
+  padding: 20px 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/* Posts Section  */
+
+
+.office-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3% 0%;
+}
+
+.about{
+  padding: 5% 30% 5% 30%;
+}
+
+
+/* Post 1 */
+.p1 {
+    padding: 5% 30% 5% 30%;
+}
+
+/* Post 2 */
+.p2 {
+  padding: 5% 30% 5% 30%;
+
+}
+
+/* Post 3 */
+
+.p3 {
+    padding: 5% 30% 5% 30%;
+}
+
+.caption{
+  text-align: center;
+}
+
+/* Post 4 */
+
+.p4 {
+  text-align: justify;
+  padding: 7% 15%;
+
+}
+
+.p5{
+  padding: 1% 30% 1% 30%;
+}
+
+.p6{
+  padding: 5% 30% 5% 30%;
+}
+
+.p7{
+  padding: 5% 30% 5% 30%;
+}
+
+.p8{
+  padding: 5% 30% 5% 30%;
+}
+
+.p9{
+  padding: 5% 30% 5% 30%;
+}
+
+.p10{
+  padding: 5% 30% 5% 30%;
+}
+
+.p11{
+  padding: 5% 30% 5% 30%;
+}
+
+.p12{
+  padding: 5% 30% 5% 30%;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+
+h2{
+    font-size: 2.7rem;
+}
+
+
+.container-fluid{
+  position: relative;
+  width: 100%;
+}
+
+.common{
+  margin: auto;
+  padding-left: 12%;
+  padding-bottom: 20px;
+}
+
+.intro{
+padding-right: 0px;
+}
+
+body{
+  padding:0%;
+}
+
+.office-image{
+  height: 250px;
+  width: 250px;
+}
+
+
+
+.p1 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p2 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p3 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p4 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p5 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p6 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p7 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p8 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p9 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p10 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p11 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.p12 {
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.about{
+  text-align: justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+}
+
+@media (min-width: 1000px) and (max-width: 1050px){
+  .common{
+    position: relative;
+    left:150px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+ .intro{
+   position: relative;
+   left:40px;
+ }
+
+
+.about-page-p {
+  text-align: justify;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.about-me{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+}
+
+@media (min-width: 767px) and (max-width: 540px){
+
+ .common{
+   position: relative;
+   left: 120px;
+ }
+
+
+}
