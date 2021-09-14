@@ -12,7 +12,7 @@ body {
 }
 
 #title {
-  background-color: #082032;
+  background-color: #141010;
   color: #fff;
   text-align: center;
 }
@@ -130,8 +130,9 @@ p {
 #footer {
   padding: 7% 15%;
   text-align: center;
-  background-color: #334756;
+  background-color: #313131;
   margin-top: auto;
+  
 }
 
 .p-text {
