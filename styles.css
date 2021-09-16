@@ -15,6 +15,7 @@ body {
   background-color: #141010;
   color: #fff;
   text-align: center;
+
 }
 
 h1 {
@@ -39,6 +40,8 @@ h1 {
   padding-right: 120px;
 
 }
+
+
 
 .heading {
   text-align: center;
@@ -130,7 +133,7 @@ p {
   text-align: center;
   background-color: #313131;
   margin-top: auto;
-  
+
 }
 
 .p-text {
@@ -146,12 +149,16 @@ p {
   text-align: center;
   padding-top: 10%;
   padding-bottom: 10%;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .about-h1{
   font-size: 2.5rem;
+}
+
+.post2-h1{
+  text-align: center;
 }
 
 .img-fluid{
@@ -159,15 +166,29 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Contact Me page */
+
+.contact-me {
+  padding-top: 50px;
+}
+
+.fill-form{
+
+  padding: 2% 30% 5% 30%;
 
 }
 /* Posts Section  */
+
 
 
 .about{
   padding: 5% 30% 5% 30%;
 }
 
+
+/* Post 1 */
 .p1 {
     padding: 5% 30% 5% 30%;
 }
@@ -178,6 +199,8 @@ p {
 
 }
 
+/* Post 3 */
+
 .p3 {
     padding: 5% 30% 5% 30%;
 }
@@ -186,7 +209,7 @@ p {
   text-align: center;
 }
 
-
+/* Post 4 */
 
 .p4 {
   text-align: justify;
@@ -229,7 +252,17 @@ p {
 
 @media (min-width: 320px) and (max-width: 767px) {
 
- .name {
+  .contact-me {
+    padding-top: 30px;
+  }
+
+  .fill-form{
+
+    padding: 2% 15% 5% 15%;
+
+  }
+
+.name {
    font-family: 'Fjalla One', sans-serif;
    font-weight: bold;
     color: #fff;
@@ -258,7 +291,15 @@ padding-right: 0px;
   position: relative;
   left: 38px;
 }
-  
+
+.about-page-p {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  /* padding-left: %;
+  padding-right: %; */
+}
+
 body{
   padding:0%;
 }
@@ -402,5 +443,3 @@ body{
 }
 
 }
-
-
